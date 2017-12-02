@@ -15,6 +15,17 @@ namespace Week16Chatter.Models
         public string ReturnUrl { get; set; }
     }
 
+    public class ExternalRegisterConfirmationViewModel
+    {
+        [Required]
+        [Display(Name = "Email")]
+        public string Email { get; set; }
+    }
+
+    public class ExternalRegisterListViewModel
+    {
+        public string ReturnUrl { get; set; }
+    }
     public class SendCodeViewModel
     {
         public string SelectedProvider { get; set; }

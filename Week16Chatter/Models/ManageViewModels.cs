@@ -19,6 +19,10 @@ namespace Week16Chatter.Models
         public IList<UserLoginInfo> CurrentLogins { get; set; }
         public IList<AuthenticationDescription> OtherLogins { get; set; }
     }
+    public class ManageRegisterViewModel
+    {
+        public IList<AuthenticationDescription> OtherLogins { get; set; }
+    }
 
     public class FactorViewModel
     {

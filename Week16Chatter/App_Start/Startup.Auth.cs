@@ -54,15 +54,15 @@ namespace Week16Chatter
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            app.UseFacebookAuthentication(
+              appId: "192126581365776",
+              appSecret: "d4c7f3cb10c5f4191d8e162ad378f777");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "403086327663-it2sgo79tmo0t73o86lj7dmarqjvtbha.apps.googleusercontent.com",
+                ClientSecret = "Ek6jq9Dxbmkehyj8EY4dLd4N"
+            });
         }
     }
 }
