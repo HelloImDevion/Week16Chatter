@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Week16Chatter.Models.Chat>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<div id="response"></div>
+<button id="getChats" class="btn btn-primary">Get Chats</button>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+<script>
+    $(document).ready(function () {
+        $("#ageChat").click(
+            function () {
+                $.get("@Url.Action("TestJson", "Chats")", function (serverResponse) {
+                    var jsonTest = JSON.parse(serverResponse);
+                    console.log(jsonTest);
+                })
+            });
+        $("#postChat").click(
+
+            );
+    });
+   
+    </script>
+    }
